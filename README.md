@@ -1,4 +1,4 @@
-# 스마트문화앱 구현 
+# 스마트문화앱 구현 NCS
 PWA 노드/리액트 구현_차영현
 
 git init -> git config -> git branch -M main -> git remote add origin 깃 저장소 주소
