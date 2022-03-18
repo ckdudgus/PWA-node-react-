@@ -4,6 +4,9 @@
   "description": "",
   "main": "pwacyh.js",
   "scripts": {
+    "server": "nodemon pwacyh.js",
+    "react": "cd cyhfront && npm start",
+    "start": "concurrently --kills others-fail \"npm run server\" \"npm eun react\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
