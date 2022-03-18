@@ -18,11 +18,12 @@ router.post('/post',(req , res) => {
 router.get('/pwaSQL' , (req ,res) => {
     connection.query(
         'select * from react_suppose.suppose',
-        (error , rows) => {
+        (error , text) => {
             if(error) throw error;
-            console.log('시험 스키마 테이블내용' , rows);
-            res.send(rows);
+            console.log('시험 스키마 테이블내용' , text);
+            res.send(text);
         }
     )   
 })
+
 module.exports = router;
